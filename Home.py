@@ -15,24 +15,25 @@ st.title("Bienvenido! 🚀")
 st.write("")
 st.write(
     """
-Este panel de control permite visualizar y actualizar los datos consolidados de productos y fletes desde :green[Google Sheets].
+Este panel de control permite visualizar y actualizar los datos consolidados de productos y fletes desde **:green[Google Sheets]**.
 """
 )
 
 st.info(
-    "**¿Cómo cambiar el tema de la app?**",
+    "¿Cómo cambiar el tema de la app?",
     icon="ℹ️",
 )
-st.write(
-    """
-Puedes cambiar entre el tema claro y oscuro usando el menú de configuración de Streamlit:
-1. Haz clic en el ícono de ajustes ⚙️ en la esquina superior derecha de la app.
-2. Selecciona la opción **'Tema'**.
-3. Elige entre **'Claro'**, **'Oscuro'** o **'Automático'** según tu preferencia.
+with st.expander("Instrucciones para cambiar el tema de la app"):
+    st.write(
+        """
+    Puedes cambiar entre el tema claro y oscuro usando el menú de configuración de Streamlit:
+    1. Haz clic en el ícono de ajustes ⚙️ en la esquina superior derecha de la app.
+    2. Selecciona la opción **'Tema'**.
+    3. Elige entre **'Claro'**, **'Oscuro'** o **'Automático'** según tu preferencia.
 
-Esto ajustará automáticamente los colores y el estilo de la interfaz.
-"""
-)
+    Esto ajustará automáticamente los colores y el estilo de la interfaz.
+    """
+    )
 
 st.write("")
 
