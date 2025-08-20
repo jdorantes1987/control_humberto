@@ -11,16 +11,24 @@ CREDENTIALS_DICT = dict(st.secrets.google_service_account)
 
 st.set_page_config(page_title="Control Humberto", page_icon="🚀", layout="centered")
 
-st.title("🚀 Bienvenido!")
+st.title("Panel de Control Humberto")
 st.write("")
-# resaltar sencilla y rápida
 
-st.write(
-    "#### Gestiona y visualiza el consolidado de operaciones de manera sencilla y rápida",
+st.markdown(
+    """
+    <div style="font-size:1.1em;">
+        <strong>Gestione y visualice el consolidado de operaciones de forma eficiente y profesional.</strong>
+    </div>
+    """,
     unsafe_allow_html=True,
 )
-
 st.write("")
+st.info(
+    "Actualice los datos presionando el botón <b>'Actualizar'</b> ubicado debajo de la tabla.",
+    icon="🔄",
+)
+st.write("")
+
 
 for key, default in [
     ("stage", 0),
