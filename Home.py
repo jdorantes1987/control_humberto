@@ -14,18 +14,13 @@ st.set_page_config(page_title="Control Humberto", page_icon="🚀", layout="cent
 st.title("Panel de Control Humberto")
 st.write("")
 
-st.markdown(
+st.write(
     """
-    <div style="font-size:1.1em;">
-        <strong>Gestione y visualice el consolidado de operaciones de forma eficiente y profesional.</strong>
-    </div>
-    """,
-    unsafe_allow_html=True,
+Este panel de control permite visualizar y actualizar los datos consolidados de productos y fletes desde :green[Google Sheets].
+"""
 )
-st.write("")
 st.info(
-    "Actualice los datos presionando el botón <b>'Actualizar'</b> ubicado debajo de la tabla.",
-    icon="🔄",
+    "Actualice los datos presionando el botón 'Actualizar' ubicado debajo de la tabla.",
 )
 st.write("")
 
