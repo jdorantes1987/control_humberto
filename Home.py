@@ -13,9 +13,9 @@ st.set_page_config(page_title="Control Humberto", page_icon="🚀", layout="cent
 
 st.markdown(
     """
-    <div style='background-color: #f0f4f8; padding: 20px; border-radius: 10px; text-align: center;'>
-        <h2 style='color: #336699; margin-bottom: 10px;'>Bienvenido al Panel de Control</h2>
-        <h4 style='color: #2c2c2c; font-weight: 400;'>
+    <div style='background: linear-gradient(90deg, #e3f2fd 0%, #fce4ec 100%); padding: 28px 24px; border-radius: 16px; text-align: center; box-shadow: 0 2px 8px rgba(51,102,153,0.08);'>
+        <h2 style='color: #336699; margin-bottom: 12px; font-size: 2.1rem; font-weight: 700; letter-spacing: 1px;'>🚀 Bienvenido al Panel de Control</h2>
+        <h4 style='color: #444; font-weight: 400; margin-bottom: 0; font-size: 1.15rem;'>
             <span style='color: #336699;'>Gestiona y visualiza el consolidado de operaciones de manera sencilla y rápida</span>
         </h4>
     </div>
