@@ -13,11 +13,13 @@ st.set_page_config(page_title="Control Humberto", page_icon="🚀", layout="cent
 
 st.markdown(
     """
-<div style='text-align: center;'>
-    <h1 style='color: #2c2c2c;'>Bienvenido al Panel de Control <span style='color: #336699;'>Humberto</span></h1>
-    <p style='font-size: 1.2em;'>Gestiona y visualiza el consolidado de operaciones de manera sencilla y rápida.</p>
-</div>
-""",
+    <div style='background-color: #f0f4f8; padding: 20px; border-radius: 10px; text-align: center;'>
+        <h2 style='color: #336699; margin-bottom: 10px;'>Bienvenido al Panel de Control</h2>
+        <h4 style='color: #2c2c2c; font-weight: 400;'>
+            <span style='color: #336699;'>Gestiona y visualiza el consolidado de operaciones de manera sencilla y rápida</span>
+        </h4>
+    </div>
+    """,
     unsafe_allow_html=True,
 )
 
