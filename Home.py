@@ -20,8 +20,20 @@ Este panel de control permite visualizar y actualizar los datos consolidados de 
 )
 
 st.info(
-    "Actualice los datos presionando el botón 'Actualizar' ubicado debajo de la tabla.",
+    "En la parte superior derecha se encuentran las configuraciones tales como el tema claro u oscuro.",
     icon="ℹ️",
+)
+st.write(
+    """
+**¿Cómo cambiar el tema de la app?**
+
+Puedes cambiar entre el tema claro y oscuro usando el menú de configuración de Streamlit:
+1. Haz clic en el ícono de ajustes ⚙️ en la esquina superior derecha de la app.
+2. Selecciona la opción **'Tema'**.
+3. Elige entre **'Claro'**, **'Oscuro'** o **'Automático'** según tu preferencia.
+
+Esto ajustará automáticamente los colores y el estilo de la interfaz.
+"""
 )
 
 st.write("")
