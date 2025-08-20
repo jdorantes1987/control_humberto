@@ -15,7 +15,7 @@ st.set_page_config(page_title="Control Humberto", page_icon="🟩", layout="cent
 st.markdown("""
 <div style='text-align: center;'>
     <h1 style='color: #2c2c2c;'>Bienvenido al Panel de Control <span style='color: #336699;'>Humberto</span></h1>
-    <p style='font-size: 1.2em;'>Gestiona y visualiza el consolidado de montos de manera sencilla y rápida.</p>
+    <p style='font-size: 1.2em;'>Gestiona y visualiza el consolidado de operaciones de manera sencilla y rápida.</p>
 </div>
 """, unsafe_allow_html=True)
 
