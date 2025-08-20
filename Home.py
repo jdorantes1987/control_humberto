@@ -9,7 +9,7 @@ SPREADSHEET_ID = st.secrets.google_sheets.FILE_ID
 FILE_NAME = st.secrets.google_sheets.FILE_NAME
 CREDENTIALS_DICT = dict(st.secrets.google_service_account)
 
-st.set_page_config(page_title="Control Humberto", page_icon="🚀", layout="centered")
+st.set_page_config(page_title="Control Humberto", page_icon="🚀")
 
 st.title("Bienvenido! 🚀")
 st.write("")
@@ -20,13 +20,11 @@ Este panel de control permite visualizar y actualizar los datos consolidados de 
 )
 
 st.info(
-    "En la parte superior derecha se encuentran las configuraciones tales como el tema claro u oscuro.",
+    "**¿Cómo cambiar el tema de la app?**",
     icon="ℹ️",
 )
 st.write(
     """
-**¿Cómo cambiar el tema de la app?**
-
 Puedes cambiar entre el tema claro y oscuro usando el menú de configuración de Streamlit:
 1. Haz clic en el ícono de ajustes ⚙️ en la esquina superior derecha de la app.
 2. Selecciona la opción **'Tema'**.
