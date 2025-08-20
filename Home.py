@@ -11,17 +11,19 @@ CREDENTIALS_DICT = dict(st.secrets.google_service_account)
 
 st.set_page_config(page_title="Control Humberto", page_icon="🚀", layout="centered")
 
-st.title("Panel de Control Humberto")
+st.title("Bienvenido! 🚀")
 st.write("")
-
 st.write(
     """
 Este panel de control permite visualizar y actualizar los datos consolidados de productos y fletes desde :green[Google Sheets].
 """
 )
+
 st.info(
     "Actualice los datos presionando el botón 'Actualizar' ubicado debajo de la tabla.",
+    icon="ℹ️",
 )
+
 st.write("")
 
 
