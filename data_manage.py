@@ -98,7 +98,7 @@ if __name__ == "__main__":
     # Inicializa el gestor de hojas con los parámetros necesarios
     manager_sheets = ManageSheets(
         file_sheet_name="Humberto Faria Teles",
-        spreadsheet_id="1ysIXTO959YdanNspRXBmkTTpDnUY3YMBornvt4iPXpk",
+        spreadsheet_id="",
         credentials_file="key.json",
     )
 

@@ -10,7 +10,7 @@ SPREADSHEET_ID = st.secrets.google_sheets.FILE_ID
 FILE_NAME = st.secrets.google_sheets.FILE_NAME
 CREDENTIALS_DICT = dict(st.secrets.google_service_account)
 
-st.set_page_config(page_title="Inicio", page_icon="🏠", layout="centered")
+st.set_page_config(page_title="Control Humberto", page_icon="🟩", layout="centered")
 
 st.markdown("""
 <div style='text-align: center;'>
