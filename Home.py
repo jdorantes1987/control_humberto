@@ -11,17 +11,9 @@ CREDENTIALS_DICT = dict(st.secrets.google_service_account)
 
 st.set_page_config(page_title="Control Humberto", page_icon="🚀", layout="centered")
 
-# Opción 2: Tarjeta con fondo oscuro y texto claro
-st.markdown(
-    """
-    <div style='background: linear-gradient(90deg, #263238 0%, #607d8b 100%); padding: 30px 26px; border-radius: 16px; text-align: center; box-shadow: 0 2px 8px rgba(51,102,153,0.12);'>
-        <h2 style='color: #fff; margin-bottom: 12px; font-size: 2.1rem; font-weight: 700; letter-spacing: 1px;'>🚀 Bienvenido!</h2>
-        <h4 style='color: #e0e0e0; font-weight: 400; margin-bottom: 0; font-size: 1.15rem;'>
-            Gestiona y visualiza el consolidado de operaciones de manera sencilla y rápida
-        </h4>
-    </div>
-    """,
-    unsafe_allow_html=True,
+st.title("🚀 Bienvenido!")
+st.subheader(
+    "Gestiona y visualiza el consolidado de operaciones de manera **sencilla y rápida**"
 )
 
 st.write("")
