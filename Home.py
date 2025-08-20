@@ -52,7 +52,7 @@ if st.session_state.stage == 1:
         "Fletes": "{:,.2f}",
         "Saldo": "{:,.2f}",
     }  # ejemplo {'sum':'${0:,.0f}', 'date': '{:%m-%Y}', 'pct_of_total': '{:.2%}'}
-    cmap = plt.colormaps["YlGn"] 
+    cmap = plt.colormaps["RdYlGn"] 
     st.dataframe(st.session_state.pivot_consolidado.style.format(format_dict).background_gradient(subset=["Saldo"], cmap=cmap,), hide_index=True) # Aplicar formato y color a la columna "Saldo"
     st.button(label="Actualizar", on_click=set_state, args=(0,), icon="🔄")
         
