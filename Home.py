@@ -11,45 +11,18 @@ CREDENTIALS_DICT = dict(st.secrets.google_service_account)
 
 st.set_page_config(page_title="Control Humberto", page_icon="🚀", layout="centered")
 
-# Opción 1: Tarjeta moderna con icono grande y fondo degradado
+# Opción 2: Tarjeta con fondo oscuro y texto claro
 st.markdown(
     """
-    <div style='background: linear-gradient(90deg, #f8fafc 0%, #e0f7fa 100%); padding: 32px 28px; border-radius: 18px; text-align: center; box-shadow: 0 4px 16px rgba(51,102,153,0.10);'>
-        <div style='font-size: 3rem; margin-bottom: 10px;'>🚀</div>
-        <h2 style='color: #1976d2; margin-bottom: 10px; font-size: 2.3rem; font-weight: 700; letter-spacing: 1px;'>Bienvenido!</h2>
-        <p style='color: #333; font-size: 1.18rem; margin-bottom: 0;'>
+    <div style='background: linear-gradient(90deg, #263238 0%, #607d8b 100%); padding: 30px 26px; border-radius: 16px; text-align: center; box-shadow: 0 2px 8px rgba(51,102,153,0.12);'>
+        <h2 style='color: #fff; margin-bottom: 12px; font-size: 2.1rem; font-weight: 700; letter-spacing: 1px;'>🚀 Bienvenido!</h2>
+        <h4 style='color: #e0e0e0; font-weight: 400; margin-bottom: 0; font-size: 1.15rem;'>
             Gestiona y visualiza el consolidado de operaciones de manera sencilla y rápida
-        </p>
+        </h4>
     </div>
     """,
     unsafe_allow_html=True,
 )
-
-# Opción 2: Tarjeta con fondo oscuro y texto claro
-# st.markdown(
-#     """
-#     <div style='background: linear-gradient(90deg, #263238 0%, #607d8b 100%); padding: 30px 26px; border-radius: 16px; text-align: center; box-shadow: 0 2px 8px rgba(51,102,153,0.12);'>
-#         <h2 style='color: #fff; margin-bottom: 12px; font-size: 2.1rem; font-weight: 700; letter-spacing: 1px;'>🚀 Bienvenido!</h2>
-#         <h4 style='color: #e0e0e0; font-weight: 400; margin-bottom: 0; font-size: 1.15rem;'>
-#             Gestiona y visualiza el consolidado de operaciones de manera sencilla y rápida
-#         </h4>
-#     </div>
-#     """,
-#     unsafe_allow_html=True,
-# )
-
-# Opción 3: Tarjeta minimalista con borde y fondo blanco
-# st.markdown(
-#     """
-#     <div style='background: #fff; border: 2px solid #90caf9; padding: 28px 24px; border-radius: 14px; text-align: center; box-shadow: 0 2px 8px rgba(51,102,153,0.06);'>
-#         <h2 style='color: #1976d2; margin-bottom: 10px; font-size: 2rem; font-weight: 700;'>🚀 Bienvenido!</h2>
-#         <p style='color: #444; font-size: 1.12rem; margin-bottom: 0;'>
-#             Gestiona y visualiza el consolidado de operaciones de manera sencilla y rápida
-#         </p>
-#     </div>
-#     """,
-#     unsafe_allow_html=True,
-# )
 
 st.write("")
 
