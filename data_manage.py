@@ -84,7 +84,6 @@ class DataManage:
             fill_value=0,
             sort=False,
         ).reset_index()
-        pivot_consolidado.sort_values(by="periodo", ascending=False, inplace=True)
         pivot_consolidado = (
             pivot_consolidado.groupby("periodo", sort=False).sum().reset_index()
         )
@@ -94,6 +93,7 @@ class DataManage:
         pivot_consolidado["Saldo"] = (
             pivot_consolidado["Productos"] + pivot_consolidado["Fletes"]
         ).cumsum()
+        pivot_consolidado.sort_values(by="periodo", ascending=False, inplace=True)
         return pivot_consolidado
 
 
@@ -104,7 +104,7 @@ if __name__ == "__main__":
     # Inicializa el gestor de hojas con los parámetros necesarios
     manager_sheets = ManageSheets(
         file_sheet_name="Humberto Faria Teles",
-        spreadsheet_id="",
+        spreadsheet_id="1ysIXTO959YdanNspRXBmkTTpDnUY3YMBornvt4iPXpk",
         credentials_file="key.json",
     )
 
