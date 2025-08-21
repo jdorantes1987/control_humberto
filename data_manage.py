@@ -84,7 +84,7 @@ class DataManage:
             fill_value=0,
             sort=False,
         ).reset_index()
-        pivot_consolidado.sort_values(by="periodo", inplace=True)
+        pivot_consolidado.sort_values(by="periodo", ascending=False, inplace=True)
         pivot_consolidado = pivot_consolidado.groupby("periodo").sum().reset_index()
         pivot_consolidado["Neto"] = (
             pivot_consolidado["Productos"] + pivot_consolidado["Fletes"]
