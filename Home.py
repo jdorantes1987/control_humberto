@@ -72,12 +72,12 @@ if st.session_state.stage == 1:
         "Neto": "{:,.2f}",
         "Saldo": "{:,.2f}",
     }  # ejemplo {'sum':'${0:,.0f}', 'date': '{:%m-%Y}', 'pct_of_total': '{:.2%}'}
-    cmap = plt.colormaps["RdYlGn"]
+    cmap = plt.colormaps["YlGn"]
     st.dataframe(
         st.session_state.pivot_consolidado.style.format(
             format_dict
         ).background_gradient(
-            subset=["Saldo"],
+            subset=["Neto", "Saldo"],
             cmap=cmap,
         ),
         hide_index=True,
