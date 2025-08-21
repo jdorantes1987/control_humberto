@@ -73,7 +73,7 @@ if st.session_state.stage == 1:
         "Saldo": "{:,.2f}",
     }  # ejemplo {'sum':'${0:,.0f}', 'date': '{:%m-%Y}', 'pct_of_total': '{:.2%}'}
 
-    cmap_dict = {"Neto": "RdYlGn", "Saldo": "PiYG"}
+    cmap_dict = {"Neto": "RdYlGn", "Saldo": "RdBu"}
     styled_df = st.session_state.pivot_consolidado.style.format(format_dict)
     for col, cmap_name in cmap_dict.items():
         styled_df = styled_df.background_gradient(cmap=cmap_name, subset=[col])
