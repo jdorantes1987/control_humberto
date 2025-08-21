@@ -69,6 +69,7 @@ if st.session_state.stage == 1:
     format_dict = {
         "Productos": "{:,.2f}",
         "Fletes": "{:,.2f}",
+        "Neto": "{:,.2f}",
         "Saldo": "{:,.2f}",
     }  # ejemplo {'sum':'${0:,.0f}', 'date': '{:%m-%Y}', 'pct_of_total': '{:.2%}'}
     cmap = plt.colormaps["RdYlGn"]
