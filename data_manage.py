@@ -34,7 +34,7 @@ class DataManage:
         Obtiene los datos de fletes.
         """
         return self.oDataControl.get_fletes()
-    
+
     def get_consolidado(self) -> DataFrame:
         """
         Obtiene el consolidado de productos y fletes.
@@ -61,13 +61,12 @@ class DataManage:
             print(f"Error al convertir columnas a numéricas: {e}")
             consolidado = DataFrame()  # Si hay un error, devuelve un DataFrame vacío
         consolidado["monto"] = where(
-            consolidado["tipo"]=="Fletes", -consolidado["monto"], consolidado["monto"]
+            consolidado["tipo"] == "Fletes", -consolidado["monto"], consolidado["monto"]
         )
-        consolidado['fecha'] = to_datetime(consolidado['fecha'], format='%d/%m/%Y')
-
+        consolidado["fecha"] = to_datetime(consolidado["fecha"], format="%d/%m/%Y")
 
         return consolidado
-    
+
     def get_pivot_consolidado(self) -> DataFrame:
         """
         Obtiene un pivot consolidado de productos y fletes.
@@ -87,7 +86,12 @@ class DataManage:
         ).reset_index()
         pivot_consolidado.sort_values(by="periodo", inplace=True)
         pivot_consolidado = pivot_consolidado.groupby("periodo").sum().reset_index()
-        pivot_consolidado["Saldo"] = (pivot_consolidado["Productos"] + pivot_consolidado["Fletes"]).cumsum()
+        pivot_consolidado["Neto"] = (
+            pivot_consolidado["Productos"] - pivot_consolidado["Fletes"]
+        )
+        pivot_consolidado["Saldo"] = (
+            pivot_consolidado["Productos"] + pivot_consolidado["Fletes"]
+        ).cumsum()
         return pivot_consolidado
 
 
