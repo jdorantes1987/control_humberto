@@ -81,4 +81,4 @@ if st.session_state.stage == 1:
         styled_df,
         hide_index=True,
     )
-    st.button(label="Actualizar", on_click=set_state, args=(0,), icon="🔄")
+    st.button(label="Actualizar", on_click=set_state, args=(0,), primary=True)
